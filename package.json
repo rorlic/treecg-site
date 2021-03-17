@@ -7,6 +7,7 @@
     "treecgsite": "bin/fetchData.js ./config.json"
   },
   "dependencies": {
+    "@comunica/actor-init-sparql": "^1.19.2",
     "commander": "^7.1.0"
   },
   "devDependencies": {},
