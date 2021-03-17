@@ -24,12 +24,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navigation />
         <Row>
           <Col lg={2} md={1} sm={0}></Col>
           
           <Col lg={8} md={10} sm={12}>
             <Switch>
+              <Navigation />
 
               {Object.values(availableViews).slice(1).map((view) => {
                 console.log('TARGET', view.target)

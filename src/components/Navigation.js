@@ -16,16 +16,19 @@ export const Navigation = () => {
     }
   }
   return (
-    <Row className="navigation">
+    <nav className="navigation">
+      <p>
+        <a className="navpageheader" href="/">TREE</a>
+      </p>
+      <ul>
       {Object.values(availableViews).map((view, index) => {
         return (
-          <div className={index==0 ? "navpage navpageleft": "navpage"}>
-            {view.icon}
-            <Button onClick={() => navigate(view)} className="pagelink">{view.id}</Button>
-          </div>
+          <li className="navpage">
+            <a href={view.target}>{view.id}</a>
+          </li>
         )
       })}
-      <div className={"navend"} />
-    </Row>
+      </ul>
+    </nav>
   )
 }

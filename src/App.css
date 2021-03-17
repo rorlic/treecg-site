@@ -25,33 +25,10 @@ img {
   margin-right: auto;
 }
 
-.navigation {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  background-color: lightgrey;
-}
-
-
 .pagelink {
   margin: 4px;
   border-radius: 8px !important;
   border: 2px solid black !important;
-}
-
-.navpage {
-  margin-left: 13px;
-}
-
-.navpageleft {
-  margin-left: auto !important;
-}
-
-.navend {
-  margin-right: 25px;
 }
 
 .personCard {
@@ -63,4 +40,70 @@ img {
 .teamPicture {
   margin: 5px;
   border-radius: 10px;
+}
+
+
+
+nav > ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 10px 5px 5px 10px;
+  margin: 10px 0 30px;
+  margin-top: 25px;
+  display: inline-block !important;
+}
+
+nav * {
+  display: inline-block;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+nav p {
+    font-weight: bold;
+    border-radius: 10px 3px 3px 10px;
+    padding: 5px 15px 5px 10px;
+    background-color: green;
+    margin-bottom: 0px;
+}
+@media (max-width: 900px) {
+  nav p {
+    display: block;
+    border-radius: 10px 0 0 0;
+  }
+}
+
+
+nav p a {
+  color: white !important;
+}
+
+nav ul {
+    padding-left: 8px;
+}
+nav ul li {
+      padding: 5px 10px;
+      border-radius: 5px;
+      letter-spacing: .1ex;
+}
+
+nav ul li :hover {
+  background-color: green;
+  color: white;
+}
+
+.navpageheader {
+  min-width: 100px;
+}
+
+.new {
+  background-color: fade(black, 6%);
+  font-weight: bold;
 }
