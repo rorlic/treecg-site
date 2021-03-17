@@ -39,7 +39,7 @@ npm run watch
 
 To build the website:
 ```bash
-# Start the website in watch mode
+# Build the website
 npm run build
 
 # This installs the dependencies, 
