@@ -32,7 +32,7 @@ async function fetch (configPath) {
   if (!fs.existsSync('./_data/')){
     fs.mkdirSync('./_data/');
   }
-  fs.writeFileSync('./_data/team.jsonld', JSON.stringify(profiles, null, 2))
+  fs.writeFileSync('./_data/team.json', JSON.stringify(profiles, null, 2))
   console.log('Done')
 }
 
