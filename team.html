@@ -4,13 +4,15 @@ title: TREE community group
 {% include header.html %}
 
 <div id="specpage">
-  <h2 class="accent">This is the team page</h2>
+  <h2 class="accent">Team</h2>
 
   <ul class="teamlist">
     {% for member in site.data.team %}
-      <li>
-        <p><b>Name</b></p><p>{{ member.name }}</p>
-        <p><b>Title</b></p><p>{{ member.title }}</p>
+      <li class="profilecard">
+        <img class="profileimg" src="{{member.img}}"/>
+        <p class='property'>Name</p><p class='value'>{{ member.name }}</p>
+        <p class='property'>Title</p><p class='value'>{{ member.title }}</p>
+        <a class='contact' href="{{member.mbox}}">contact</a>
       </li>
     {% endfor %}
   </ul>
