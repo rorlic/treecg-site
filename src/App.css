@@ -63,7 +63,7 @@ nav * {
 
 
 nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav p {
@@ -89,14 +89,25 @@ nav ul {
     padding-left: 8px;
 }
 nav ul li {
-      padding: 5px 10px;
-      border-radius: 5px;
-      letter-spacing: .1ex;
+    padding: 5px 10px;
+    border-radius: 5px;
+    letter-spacing: .1ex;
 }
 
-nav ul li :hover {
+nav ul li:hover {
   background-color: green;
-  color: white;
+  text-decoration: none;
+  color: white !important;
+}
+
+nav ul li:hover * {
+  background-color: green;
+  text-decoration: none;
+  color: white !important;
+}
+
+nav ul li a {
+  color: green;
 }
 
 .navpageheader {
@@ -104,6 +115,6 @@ nav ul li :hover {
 }
 
 .new {
-  background-color: fade(black, 6%);
+  background-color: rgba(0, 0, 0, 0.06);
   font-weight: bold;
 }

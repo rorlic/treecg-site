@@ -23,7 +23,7 @@ export const Navigation = () => {
       <ul>
       {Object.values(availableViews).map((view, index) => {
         return (
-          <li className="navpage">
+          <li className={view.newtab ? "navpage new" : "navpage"}>
             <a href={view.target}>{view.id}</a>
           </li>
         )
