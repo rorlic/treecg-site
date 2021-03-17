@@ -7,8 +7,48 @@ body {
   font: 11pt/1.6 'Open Sans', Verdana, Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+#billboard {
+  text-align: center;
+  margin: -1em 0 2em;
+}
+#billboard h1 {
+  display: none;
+}
+#billboard p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#billboard .slogan {
+  line-height: 1.4;
+  color: green;
+  font-size: 2em;
+}
+
+.logo {
+    margin: 20px 20px 20px 20px;
+}
+
+#billboard .slogan img {
+  display: block;
+  margin: 0 auto 1.4ex;
+  width: 680px;
+}
+#billboard .slogan a {
+  text-decoration: none;
+}
+#billboard em {
+  white-space: nowrap;
+}
+
+
+footer {
+  margin-top: 3em;
+  text-align: center;
+  font-size: small;
+  color: #666666;
+}
+footer a {
+  text-decoration: none;
 }
 
 /* .mainContent {
@@ -77,6 +117,65 @@ nav p {
   nav p {
     display: block;
     border-radius: 10px 0 0 0;
+  }
+}
+
+@media (min-width: 900px) {
+  body.home main {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 900px) {
+  nav p {
+    display: block;
+    border-radius: 10px 0 0 0;
+  }
+  nav:after {
+    display: none;
+  }
+  svg.alternate .label:nth-child(odd) {
+    baseline-shift: -1em;
+  }
+  #billboard .slogan {
+    font-size: 1.9em;
+  }
+  #billboard .slogan img {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 620px) {
+  body {
+    padding: 5px 10px;
+    font-size: 10pt;
+  }
+  h1 {
+    display: none;
+  }
+  nav {
+    margin: -5px -10px 10px;
+  }
+  nav ul {
+    padding: 0px;
+    font-size: .9em;
+  }
+  nav ul li {
+    padding: 5px 6px;
+  }
+  .screenshot {
+    display: none;
+  }
+}
+@media (max-height: 700px) {
+  body {
+    line-height: 1.4;
+  }
+  #billboard .slogan {
+    font-size: 1.3em;
+  }
+  #billboard .slogan img {
+    width: 40%;
+    margin-bottom: 0.5em;
   }
 }
 
