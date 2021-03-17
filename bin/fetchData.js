@@ -24,7 +24,7 @@ async function fetch (configPath) {
 
   let profiles = []
   for (let id of config.team) {
-    profiles.push(await fetchProfile(id))
+    profiles.push(fetchProfile(id))
   }
   profiles = await Promise.all(profiles)
 
