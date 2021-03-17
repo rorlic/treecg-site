@@ -28,7 +28,12 @@ body {
 .logo {
     margin: 20px 20px 20px 20px;
 }
-
+a {
+  color: green;
+}
+a:hover {
+  color: #2cbe16;
+}
 #billboard .slogan img {
   display: block;
   margin: 0 auto 1.4ex;
