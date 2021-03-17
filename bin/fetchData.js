@@ -22,11 +22,12 @@ async function fetch (configPath) {
   const config = JSON.parse(fs.readFileSync(configPath, {encoding: "utf-8"}))
   console.log('config', config)
 
-  const profiles = []
+  let profiles = []
   for (let id of config.team) {
-    profiles.push(fetchProfile(id))
+    profiles.push(await fetchProfile(id))
   }
-  await Promise.all(profiles)
+  profiles = await Promise.all(profiles)
+
   
   if (!fs.existsSync('./_data/')){
     fs.mkdirSync('./_data/');

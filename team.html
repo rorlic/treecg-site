@@ -1,0 +1,21 @@
+---
+title: TREE community group
+---
+{% include header.html %}
+
+<div id="specpage">
+  <p class="slogan">This is the team page</p>
+
+  <ul>
+    {% for member in site.data.team %}
+      <li>
+        <p">
+          {{ member.name }}
+      </p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+{% include footer.html %}

@@ -1,7 +1,42 @@
 [
-  {},
-  {},
-  {},
-  {},
-  {}
+  {
+    "name": "Pieter Colpaert",
+    "givenName": "Pieter",
+    "familyName": "Colpaert",
+    "title": "Post-doctoral researcher",
+    "mbox": "mailto:pieter@openknowledge.be",
+    "img": "https://pietercolpaert.be/img/pc.jpg"
+  },
+  {
+    "name": "Ruben Dedecker",
+    "givenName": "Ruben",
+    "familyName": "Dedecker",
+    "title": "PhD Student",
+    "mbox": "mailto:Ruben.Dedecker@UGent.be",
+    "img": "https://data.knows.idlab.ugent.be/person/rubend/profile.jpg"
+  },
+  {
+    "name": "Harm Delva",
+    "givenName": "Harm",
+    "familyName": "Delva",
+    "title": "PhD Student",
+    "mbox": "mailto:harm.delva@ugent.be",
+    "img": "https://data.knows.idlab.ugent.be/person/harm/profile.jpeg"
+  },
+  {
+    "name": "Julián Andrés Rojas Meléndez",
+    "givenName": "Julián Andrés",
+    "familyName": "Rojas Meléndez",
+    "title": "PhD. Researcher",
+    "mbox": "mailto:julianandres.rojasmelendez@ugent.be",
+    "img": "https://julianrojas.org/resources/img/me.jpg"
+  },
+  {
+    "name": "Brecht Van de Vyvere",
+    "givenName": "Brecht",
+    "familyName": "Van de Vyvere",
+    "title": "PhD researcher",
+    "mbox": "mailto:brecht.vandevyvere@ugent.be",
+    "img": "https://brechtvdv.github.io/profile.jpg"
+  }
 ]
