@@ -33,6 +33,8 @@ async function fetch (configPath) {
     fs.mkdirSync('./_data/');
   }
   fs.writeFileSync('./_data/team.json', JSON.stringify(profiles, null, 2))
+  fs.writeFileSync('./_data/demos.json', JSON.stringify(config.demos, null, 2))
+  fs.writeFileSync('./_data/publications.json', JSON.stringify(config.publications, null, 2))
   console.log('Done')
 }
 
