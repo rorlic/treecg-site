@@ -113,6 +113,7 @@ nav p {
     padding: 5px 15px 5px 10px;
     background-color: green;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 @media (max-width: 900px) {
   nav p {
@@ -187,6 +188,7 @@ nav p a {
 
 nav ul {
     padding-left: 8px;
+    margin-top: 0px;
 }
 nav ul li {
     padding: 5px 10px;
@@ -271,4 +273,28 @@ nav ul li a {
   margin-top: 10px;
   padding: 7px;
   border-radius: 20px;
+}
+
+h1::before {
+  content: "TREE | ";
+  color: rgba(0, 128, 0, 0.5);
+  font-weight: lighter;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+.textContent {
+  text-align: left;
+}
+
+.textContent h2 {
+  color: green;
+  margin: 0.5em 0 0.2em -1px;
+}
+
+.textContent p {
+  margin: 0;
+  padding: 0;
 }

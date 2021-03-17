@@ -14,21 +14,37 @@ Future:
 
 ## Building the website
 
-We first prefetch data using the `bin/fetchData.js` script, we then build the age using Jekyll.
+We first prefetch data using the `bin/fetchData.js` script, we then build the page using Jekyll.
 
-First install all dependencies:
+
+
+## Installation
+This setup requires the installation of:
+- ruby
+- bundler
+- jekyll
+- npm
+  
+To compile and watch the website:
+
+(note that this does not watch changes in the config file or any of the rdf sources)
 ```bash
-# Node dependencies
-npm install
-# Ruby dependencies
-bundle install
+# Start the website in watch mode
+npm run watch
+
+# This installs the dependencies, 
+# retrieves the RDF data
+# and starts the site on localhost:4000.
 ```
 
-Then fetch the data and build the website
-
+To build the website:
 ```bash
-./bin/fetchData.js
-jekyll build
+# Start the website in watch mode
+npm run build
+
+# This installs the dependencies, 
+# retrieves the RDF data
+# and generates the site in the _site folder.
 ```
 
-Use `jekyll serve` when you’re developing, run `bin/fetchData.js` when someone added new data somewhere.
+On new data being added, run the respective command again.
