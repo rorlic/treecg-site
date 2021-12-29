@@ -7,28 +7,28 @@ title: TREE community group
   <h1>Software</h1>
   <div class="textContent">
     <h2>Use our available software to enhance your data publishing and querying</h2>
-    <h3><a href="https://github.com/hdelva/substring_fragmenter" style="color: black">Substring fragmenter</a></h3>
+    <h3>The Linked Data Event Streams client</h3>
     <p>
-      This program creates TREE fragmentations from RDF datasets.
-      These fragmentations can be queried over using the <a href="https://github.com/TREEcg/treemunica">TreeMunica</a> query engine.
-    </p>
-    <p>
-      <a href="https://github.com/hdelva/substring_fragmenter">Documentation on Github</a>
-    </p>
-    <h3><a href="https://github.com/TREEcg/treemunica" style="color: black">TREEmunica</a></h3>
-    <p>
-      This is a fork of the <a href="https://comunica.dev">Comunica Knowledge Graph querying library</a> to support TREE and LDES metadata extraction, and perform for example autocompletion across a tree:Collection that is fragmented using substrings.
-    </p>
-    <p>
-      <a href="https://github.com/TREEcg/treemunica">Documentation on Github</a>
-    </p>
-    
-    <h3><a href="https://github.com/TREEcg/event-stream-client" style="color: black">The Linked Data Event Streams Client</a></h3>
-    <p>
-      This library uses Comunica components to create a NodeJS tool for replicating a full Linked Data Event Stream and stay in sync with it.
-    </p>
-    <p>
+      A Linked Data Event Stream is a <code>tree:Collection</code> with immutable members.
+      You can use the client to replicate the full <code>tree:Collection</code> and remain in-sync with it afterwards by following all relations starting from a view.
       <a href="https://github.com/TREEcg/event-stream-client">Documentation on Github</a>
+    </p>
+    <h3>Bucketizers and connectors</h3>
+    <p>
+      Bucketizers categorize each member of a collection in one or more pages. Connectors write members to a back-end or to another stream processor.
+    </p>
+    <p>
+      <a href="https://github.com/treecg/bucketizers">The Bucketizers on Github</a>
+    </p>
+    <p>
+      <a href="https://github.com/treecg/connectors">The Connectors on Github</a>
+    </p>
+
+    <h3>Querying tree:Collections with Comunica</h3>
+    <p><a href="https://comunica.dev" target="_blank">Comunica</a>, a Web framework to query Linked Data Fragments and heterogeneous views on top of <code>tree:Collections</code>.</p>
+    <p>
+      At the moment of writing (dec 2021), TREE support in Comunica is still experimental.
+      A working prototype can be found <a href="https://github.com/TREEcg/treemunica">in this fork</a>. It supports TREE and LDES metadata extraction, and is able to perform <a href="https://tree.linkeddatafragments.org/demo/autocompletion/?datasets%5B%5D=https%253A%252F%252Ftree.linkeddatafragments.org%252Fdata%252Faddressregister%252Fstreetnames%252F%252Chttps%253A%252F%252Fruben.verborgh.org%252Fprofile%252F%252Chttps%253A%252F%252Fwww.w3.org%252FPeople%252FBerners-Lee%252Fcard&query=Tim%2520B">autocompletion</a> across one or more <code>tree:Collection</code> that is fragmented using a substring fragmentation.
     </p>
   </div>
 </div>
