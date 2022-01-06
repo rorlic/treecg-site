@@ -6,3 +6,4 @@ vendor
 node_modules/
 yarn-error.log
 _data/
+package-lock.json
