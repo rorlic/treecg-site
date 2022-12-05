@@ -1,0 +1,305 @@
+body {
+  text-align: center;
+  min-height: 100vh;
+  max-width: 860px;
+  min-width: 400px;
+  margin: auto;
+  overflow: auto;
+  font: 11pt/1.6 'Open Sans', Verdana, Arial, sans-serif;
+}
+
+#billboard {
+  text-align: center;
+  margin: -1em 0 2em;
+}
+#billboard h1 {
+  display: none;
+}
+#billboard p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#billboard .slogan {
+  line-height: 1.4;
+  color: #5252cf;
+  font-size: 2em;
+}
+
+.logo {
+    margin: 20px 20px 20px 20px;
+}
+a {
+  color:  #5252cf;
+}
+a:hover {
+  color: #2cbe16;
+}
+#billboard .slogan img {
+  display: block;
+  margin: 0 auto 1.4ex;
+  width: 680px;
+}
+#billboard .slogan a {
+  text-decoration: none;
+}
+#billboard em {
+  white-space: nowrap;
+}
+
+
+footer {
+  margin-top: 3em;
+  text-align: center;
+  font-size: small;
+  color: #666666;
+}
+footer a {
+  text-decoration: none;
+}
+
+/* .mainContent {
+  background: linear-gradient( rgba(218, 218, 218, 0.3), rgba(221, 221, 221, 0.3) )
+} */
+
+.filler {
+}
+
+img {
+  text-align: center;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagelink {
+  margin: 4px;
+  border-radius: 8px !important;
+  border: 2px solid black !important;
+}
+
+.personCard {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.teamPicture {
+  margin: 5px;
+  border-radius: 10px;
+}
+
+
+
+nav > ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 10px 5px 5px 10px;
+  margin: 10px 0 30px;
+  margin-top: 25px;
+  display: inline-block !important;
+}
+
+nav * {
+  display: inline-block;
+}
+
+
+nav a {
+  text-decoration: none;
+}
+
+nav p {
+    font-weight: bold;
+    border-radius: 10px 3px 3px 10px;
+    padding: 5px 15px 5px 10px;
+    background-color:  #5252cf;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+@media (max-width: 900px) {
+  nav p {
+    display: block;
+    border-radius: 10px 0 0 0;
+  }
+}
+
+@media (min-width: 900px) {
+  body.home main {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 900px) {
+  nav p {
+    display: block;
+    border-radius: 10px 0 0 0;
+  }
+  nav:after {
+    display: none;
+  }
+  svg.alternate .label:nth-child(odd) {
+    baseline-shift: -1em;
+  }
+  #billboard .slogan {
+    font-size: 1.9em;
+  }
+  #billboard .slogan img {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 620px) {
+  body {
+    padding: 5px 10px;
+    font-size: 10pt;
+  }
+  h1 {
+    display: none;
+  }
+  nav {
+    margin: -5px -10px 10px;
+  }
+  nav ul {
+    padding: 0px;
+    font-size: .9em;
+  }
+  nav ul li {
+    padding: 5px 6px;
+  }
+  .screenshot {
+    display: none;
+  }
+}
+@media (max-height: 700px) {
+  body {
+    line-height: 1.4;
+  }
+  #billboard .slogan {
+    font-size: 1.3em;
+  }
+  #billboard .slogan img {
+    width: 70%;
+    margin-bottom: 0.5em;
+  }
+}
+
+
+nav p a {
+  color: white !important;
+}
+
+nav ul {
+    padding-left: 8px;
+    margin-top: 0px;
+}
+nav ul li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    letter-spacing: .1ex;
+}
+
+nav ul li:hover {
+  background-color:  #5252cf;
+  text-decoration: none;
+  color: white !important;
+}
+
+nav ul li:hover * {
+  background-color:  #5252cf;
+  text-decoration: none;
+  color: white !important;
+}
+
+nav ul li a {
+  color:  #5252cf;
+}
+
+.navpageheader {
+  min-width: 100px;
+}
+
+.new {
+  background-color: rgba(0, 0, 0, 0.06);
+  font-weight: bold;
+}
+
+
+.teamlist {
+  list-style-type: none;
+}
+
+.accent {
+  color:  #5252cf;
+}
+
+.profilecard {
+  display: inline-block;
+  max-width: 250px;
+  min-width: 180px;
+  margin: 10px;
+  background-color:  #5252cf;
+  color: white;
+  padding: 1rem;
+  border-radius: 30px 0 30px 0 !important;
+}
+
+.profileimg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 30px 0 30px 0 !important;
+}
+
+.property {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 2px;
+  padding-bottom: 0px;
+}
+
+.smallproperty {
+  display: inline-block;
+}
+
+.value {
+  text-align: left;
+  padding-top: 0px;
+  margin-top: 3px;
+}
+
+.contact {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+h1::before {
+  content: "TREE | ";
+  color: rgba(0, 128, 0, 0.5);
+  font-weight: lighter;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+.textContent {
+  text-align: left;
+}
+
+.textContent h2 {
+  color:  #5252cf;
+  margin: 0.5em 0 0.2em -1px;
+}
+
+.textContent p {
+  margin: 0;
+  padding: 0;
+}
