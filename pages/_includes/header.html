@@ -15,7 +15,7 @@
     <style>
     :root {
       --prim: green;
-      --sec: #2cbe16;
+      --sec: #00a300;
     }
     </style>
     <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
@@ -29,14 +29,18 @@
         <nav class="navigation">
           <p><a class="navpageheader" href="/">TREE</a></p>
           <ul>
-            <li class="navpage"><a href="/linked-data-event-streams">LDES</a></li>
-            <li class="navpage"><a href="/spec">Specs</a></li>
-            <!--<li class="navpage"><a href="/pages">Use it for…</a></li>
-            <li class="navpage"><a href="/datasets">Datasets</a></li>-->
-            <li class="navpage"><a href="/software">Software</a></li>
+
+            {% for nav in site.tree_pages %}
+              {% assign url = nav.location | append: '.html' %}
+              {% assign url2 = page.url | split: "/" | last | prepend: '/' %}
+
+              <li class="navpage {{url2}} {{url}}  {% if url2 == url %} active {% endif %}"><a href={{ nav.location }}>{{nav.title}}</a></li>
+            {% endfor %}
+
+            <!--<li class="navpage"><a href="/pages">Use it for…</a></li>-->
+            <!--<li class="navpage"><a href="/datasets">Datasets</a></li>-->
             <!--<li class="navpage"><a href="/team">Team</a></li>-->
-            <li class="navpage"><a href="/publications">Publications</a></li>
-            <li class="navpage"><a href="/demo">Try live</a></li>
+
             <li class="navpage new"><a href="https://www.youtube.com/playlist?list=PLRBOTYR9bOiibSZUv8_qCLWuJcv840dSk">YouTube</a></li>
             <li class="navpage new"><a href="https://github.com/treecg">Github</a></li>
           </ul>

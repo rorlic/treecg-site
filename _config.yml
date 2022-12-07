@@ -34,6 +34,17 @@ source: "pages"
 ldes_pages:
   - title: TREE
     location: /
+tree_pages:
+  - title: LDES
+    location: /linked-data-event-streams
+  - title: Specs
+    location: /spec
+  - title: Software
+    location: /software
+  - title: Publications
+    location: /publications
+  - title: Try live
+    location: /demo
   # - title: Getting Started
   #   location: getting-started
   # - title: Publications

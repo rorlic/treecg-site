@@ -30,7 +30,9 @@
           <p><a class="navpageheader" href="/linked-data-event-streams/">LDES</a></p>
           <ul>
             {% for nav in site.ldes_pages %}
-            <li class="navpage {% if include.current == nav.location %} active {% endif %}"><a href={{ nav.location }}>{{nav.title}}</a></li>
+            {% assign url = nav.location | append: '.html' %}
+            {% assign url2 = page.url | split: "/" | last | prepend: '/' %}
+            <li class="navpage {% if url == url2 %} active {% endif %}"><a href={{ nav.location }}>{{nav.title}}</a></li>
             {% endfor %}
 
  <!--           <li class="navpage"><a href="stories">Success Stories</a></li>-->
