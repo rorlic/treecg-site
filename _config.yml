@@ -59,7 +59,7 @@ ldes_publications:
     venue: Proceedings of the 21th International Conference on Web Engineering.
     links:
       - title: Presented at ENDORSE2021
-        link: https://www.youtube.com/watch?v=89UVTahjCvo&t=1091s
+        url: https://www.youtube.com/watch?v=89UVTahjCvo&t=1091s
   - title: Linked Data Event Streams in Solid containers
     year: 2022
     tag: core

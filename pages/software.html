@@ -6,43 +6,57 @@ title: TREE community group
 <div id="softwarepage">
   <h1>Software</h1>
   <div class="textContent">
-    <h2>Use our available software to enhance your data publishing and querying</h2>
-    <h3>The Linked Data Event Streams client</h3>
-    <p>
-      A Linked Data Event Stream is a <code>tree:Collection</code> with immutable members.
-      You can use the client to replicate the full <code>tree:Collection</code> and remain in-sync with it afterwards by following all relations starting from a view.
-      <a href="https://github.com/TREEcg/event-stream-client">Documentation on Github</a>
-    </p>
 
-    <h3>Bucketizers and connectors</h3>
-    <p>
-      Bucketizers categorize each member of a collection in one or more pages. Connectors write members to a back-end or to another stream processor.
-    </p>
-    <p>
-      <a href="https://github.com/treecg/bucketizers">The Bucketizers on Github</a>
-    </p>
-    <p>
-      <a href="https://github.com/treecg/connectors">The Connectors on Github</a>
-    </p>
+    <div class="software">
+      <h2>The Linked Data Event Streams client</h3>
+      <p>
+        A Linked Data Event Stream is a <code>tree:Collection</code> with immutable members.
+        You can use the client to replicate the full <code>tree:Collection</code> and remain in-sync with it afterwards by following all relations starting from a view.
+        <a href="https://github.com/TREEcg/event-stream-client">Documentation on Github</a>
+      </p>
+    </div>
 
-    <h3>Querying tree:Collections with Comunica</h3>
-    <p><a href="https://comunica.dev" target="_blank">Comunica</a>, a Web framework to query Linked Data Fragments and heterogeneous views on top of <code>tree:Collections</code>.</p>
-    <p>
-      At the moment of writing (dec 2021), TREE support in Comunica is still experimental.
-      A working prototype can be found <a href="https://github.com/TREEcg/treemunica">in this fork</a>. It supports TREE and LDES metadata extraction, and is able to perform <a href="https://tree.linkeddatafragments.org/demo/autocompletion/?datasets%5B%5D=https%253A%252F%252Ftree.linkeddatafragments.org%252Fdata%252Faddressregister%252Fstreetnames%252F%252Chttps%253A%252F%252Fruben.verborgh.org%252Fprofile%252F%252Chttps%253A%252F%252Fwww.w3.org%252FPeople%252FBerners-Lee%252Fcard&query=Tim%2520B">autocompletion</a> across one or more <code>tree:Collection</code> that is fragmented using a substring fragmentation.
-    </p>
+    <div class="software">
+      <h2>Connector architecture</h3>
+      <p> Bucketizers categorize each member on a stream in one or more pages/buckets/fragments. These bucketized members can then be ingested into a LDES server. 
+      <p> To facilitate this orchestration of different processors handling the stream of data, a specialized runner can be used. There exists a <a href="https://github.com/ajuvercr/nifi-runner">nifi-runner</a> and a <a href="https://github.com/ajuvercr/js-runner">js runner</a> that both start a chain of processors using some rdf configuration.</a> 
+      <p> Using these runners enables the user to configure one big pipeline, that can be started with each pipeline runner (nifi/js) individually, and configure the processor to talk with each other over channels, like websockets.</p>
+      <p>Here are some components that should work nicely together</p>
+      <ul>
+        <li><a href="https://github.com/TREEcg/bucketizers/">Bucketizers (js)</a></li>
+        <li><a href="https://github.com/TREEcg/ldes-solid-server">LDES solid server</a></li>
+        <li><a href="https://github.com/TREEcg/sds-storage-writer-mongo">SDS storeage writer mongo (LDES server ingestor)</a></li>
+        <li><a href="https://github.com/Informatievlaanderen/VSDS-LDESServer4J">LDES Server 4J</a></li>
+        <li><a href="https://github.com/Informatievlaanderen/VSDS-LDESWorkbench-NiFi/tree/main/ldes-client-processor">LDES client processor (nifi)</a></li>
+        <li><a href="https://github.com/Informatievlaanderen/VSDS-LDESWorkbench-NiFi/tree/main/ngsi-ld-to-ldes-processor">NGSI LD to LDES processor (nifi)</a></li>
+        <li><a href="https://github.com/Informatievlaanderen/VSDS-LDESWorkbench-NiFi/tree/main/ngsiv2-to-ngsi-ld-processor">NGSI V2 to NGSI LD processor (nifi)</a></li>
+      </ul>
+    </div>
 
-    <h3>LDES Snapshot</h3>
-    <p>
-      A snapshot of a versioned LDES at time t is an LDES where only the most recent versions until time t are present.
-      The <a href="https://www.npmjs.com/package/@treecg/ldes-snapshot" target="_blank">@treecg/ldes-snapshot</a> library allows everyone to create a snapshot of a versioned LDES.
-    </p>
+    <div class="software">
+      <h2>Querying tree:Collections with Comunica</h3>
+      <p><a href="https://comunica.dev" target="_blank">Comunica</a>, a Web framework to query Linked Data Fragments and heterogeneous views on top of <code>tree:Collections</code>.</p>
+      <p>
+        At the moment of writing (dec 2021), TREE support in Comunica is still experimental.
+        A working prototype can be found <a href="https://github.com/TREEcg/treemunica">in this fork</a>. It supports TREE and LDES metadata extraction, and is able to perform <a href="https://tree.linkeddatafragments.org/demo/autocompletion/?datasets%5B%5D=https%253A%252F%252Ftree.linkeddatafragments.org%252Fdata%252Faddressregister%252Fstreetnames%252F%252Chttps%253A%252F%252Fruben.verborgh.org%252Fprofile%252F%252Chttps%253A%252F%252Fwww.w3.org%252FPeople%252FBerners-Lee%252Fcard&query=Tim%2520B">autocompletion</a> across one or more <code>tree:Collection</code> that is fragmented using a substring fragmentation.
+      </p>
+    </div>
 
-    <h3>LDES in LDP package</h3>
-    <p>
-      The <a href="https://woutslabbinck.github.io/LDESinLDP/">LDES in LDP specification</a> describes how to write to a time-based fragmented LDES stored on a <a href="https://solidproject.org/">Solid</a> pod or <a href="https://www.w3.org/TR/ldp/">Linked Data Platform (LDP)</a>.<br>
-      <a href="https://www.npmjs.com/package/@treecg/versionawareldesinldp" target="_blank">@treecg/versionawareldesinldp</a> is an npm package that deals with the initialisation of and interaction with a (versioned) LDES in LDP.
-    </p>
+    <div class="software">
+      <h2>LDES Snapshot</h3>
+      <p>
+        A snapshot of a versioned LDES at time t is an LDES where only the most recent versions until time t are present.
+        The <a href="https://www.npmjs.com/package/@treecg/ldes-snapshot" target="_blank">@treecg/ldes-snapshot</a> library allows everyone to create a snapshot of a versioned LDES.
+      </p>
+    </div>
+
+    <div class="software">
+      <h2>LDES in LDP package</h3>
+      <p>
+        The <a href="https://woutslabbinck.github.io/LDESinLDP/">LDES in LDP specification</a> describes how to write to a time-based fragmented LDES stored on a <a href="https://solidproject.org/">Solid</a> pod or <a href="https://www.w3.org/TR/ldp/">Linked Data Platform (LDP)</a>.<br>
+        <a href="https://www.npmjs.com/package/@treecg/versionawareldesinldp" target="_blank">@treecg/versionawareldesinldp</a> is an npm package that deals with the initialisation of and interaction with a (versioned) LDES in LDP.
+      </p>
+    </div>
   </div>
 </div>
 

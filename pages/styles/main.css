@@ -300,11 +300,6 @@ h1 {
   margin: 0.5em 0 0.2em -1px;
 }
 
-.textContent p {
-  margin: 0;
-  padding: 0;
-}
-
 .publication .title, .publication .authors, .publication .venue {
   display: block;
 }
@@ -344,11 +339,16 @@ ul + ul {
 .tagged .tag {
   text-transform: capitalize;
 }
-.publication::before {
+
+.publication::before, .specification > h2::before, .software > h2::before {
   content: "■ ";
   color: var(--prim);
   position: absolute;
-  margin: -1px -16px;
+  margin: -1px -1em;
+}
+
+.specification > h2::before, .software > h2::before {
+  content: "❖ ";
 }
 
 .publication a {
