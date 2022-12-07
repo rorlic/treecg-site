@@ -13,6 +13,7 @@ title: TREE community group
       You can use the client to replicate the full <code>tree:Collection</code> and remain in-sync with it afterwards by following all relations starting from a view.
       <a href="https://github.com/TREEcg/event-stream-client">Documentation on Github</a>
     </p>
+
     <h3>Bucketizers and connectors</h3>
     <p>
       Bucketizers categorize each member of a collection in one or more pages. Connectors write members to a back-end or to another stream processor.
@@ -29,6 +30,18 @@ title: TREE community group
     <p>
       At the moment of writing (dec 2021), TREE support in Comunica is still experimental.
       A working prototype can be found <a href="https://github.com/TREEcg/treemunica">in this fork</a>. It supports TREE and LDES metadata extraction, and is able to perform <a href="https://tree.linkeddatafragments.org/demo/autocompletion/?datasets%5B%5D=https%253A%252F%252Ftree.linkeddatafragments.org%252Fdata%252Faddressregister%252Fstreetnames%252F%252Chttps%253A%252F%252Fruben.verborgh.org%252Fprofile%252F%252Chttps%253A%252F%252Fwww.w3.org%252FPeople%252FBerners-Lee%252Fcard&query=Tim%2520B">autocompletion</a> across one or more <code>tree:Collection</code> that is fragmented using a substring fragmentation.
+    </p>
+
+    <h3>LDES Snapshot</h3>
+    <p>
+      A snapshot of a versioned LDES at time t is an LDES where only the most recent versions until time t are present.
+      The <a href="https://www.npmjs.com/package/@treecg/ldes-snapshot" target="_blank">@treecg/ldes-snapshot</a> library allows everyone to create a snapshot of a versioned LDES.
+    </p>
+
+    <h3>LDES in LDP package</h3>
+    <p>
+      The <a href="https://woutslabbinck.github.io/LDESinLDP/">LDES in LDP specification</a> describes how to write to a time-based fragmented LDES stored on a <a href="https://solidproject.org/">Solid</a> pod or <a href="https://www.w3.org/TR/ldp/">Linked Data Platform (LDP)</a>.<br>
+      <a href="https://www.npmjs.com/package/@treecg/versionawareldesinldp" target="_blank">@treecg/versionawareldesinldp</a> is an npm package that deals with the initialisation of and interaction with a (versioned) LDES in LDP.
     </p>
   </div>
 </div>
