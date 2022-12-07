@@ -1,0 +1,42 @@
+---
+title: Publications
+---
+{% include header.html current='publications' %}
+
+<div id="specpage">
+  <h1 class="ldes">Publications</h1>
+  <div class="textContent">
+    {% assign publications_grouped = site.ldes_publications | group_by: "tag" %}
+    {% for tag in publications_grouped %}
+    <div class="tagged">
+      <h2 class="tag">{{tag.name}}</h2>
+
+      {% assign publications_per_year = tag.items | sort: 'year' | reverse | group_by: "year"  %}
+      {% for year in publications_per_year %}
+      <div class="per-year">
+        <span class="year">{{year.name}}</span>
+        {% for publication in year.items %}
+        <div class="publication">
+          <span class="title"><a href={{publication.url}}>{{publication.title}}</a></span>
+          <span class="authors">{{publication.authors}}</span>
+          {% if publication.venue %}
+          <span class="venue">{{publication.venue}}</span>
+          {% endif %}
+          {% if publication.links %}
+          <ul class="links">
+            {% for l in publication.links %}
+            <li><a href={{l.link}}>{{l.title}}</a></li>
+            {%endfor%}
+          </ul>
+          {%endif%}
+        </div>
+        {%endfor%}
+      </div>
+
+      {%endfor%}
+    </div>
+    {%endfor%}
+  </div>
+</div>
+
+{% include footer.html %}

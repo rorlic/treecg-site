@@ -21,7 +21,7 @@ body {
 }
 #billboard .slogan {
   line-height: 1.4;
-  color: green;
+  color: var(--prim);
   font-size: 2em;
 }
 
@@ -29,10 +29,10 @@ body {
     margin: 20px 20px 20px 20px;
 }
 a {
-  color: green;
+  color:  var(--prim);
 }
 a:hover {
-  color: #2cbe16;
+  color: var(--sec);
 }
 #billboard .slogan img {
   display: block;
@@ -55,13 +55,6 @@ footer {
 }
 footer a {
   text-decoration: none;
-}
-
-/* .mainContent {
-  background: linear-gradient( rgba(218, 218, 218, 0.3), rgba(221, 221, 221, 0.3) )
-} */
-
-.filler {
 }
 
 img {
@@ -116,7 +109,7 @@ nav p {
     font-weight: bold;
     border-radius: 10px 3px 3px 10px;
     padding: 5px 15px 5px 10px;
-    background-color: green;
+    background-color:  var(--prim);
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -201,21 +194,22 @@ nav ul li {
     letter-spacing: .1ex;
 }
 
-nav ul li:hover {
-  background-color: green;
-  text-decoration: none;
-  color: white !important;
-}
-
-nav ul li:hover * {
-  background-color: green;
-  text-decoration: none;
-  color: white !important;
-}
-
 nav ul li a {
-  color: green;
+  color:  var(--prim);
 }
+
+nav ul li.active {
+  background-color:  var(--sec);
+}
+nav ul li:hover {
+  background-color:  var(--prim);
+}
+
+nav ul li:hover *, nav ul li.active * {
+  text-decoration: none;
+  color: white;
+}
+
 
 .navpageheader {
   min-width: 100px;
@@ -232,7 +226,7 @@ nav ul li a {
 }
 
 .accent {
-  color: green;
+  color:  var(--prim);
 }
 
 .profilecard {
@@ -240,7 +234,7 @@ nav ul li a {
   max-width: 250px;
   min-width: 180px;
   margin: 10px;
-  background-color: green;
+  background-color:  var(--prim);
   color: white;
   padding: 1rem;
   border-radius: 30px 0 30px 0 !important;
@@ -282,9 +276,16 @@ nav ul li a {
 
 h1::before {
   content: "TREE | ";
-  color: rgba(0, 128, 0, 0.5);
+  color: var(--sec);
   font-weight: lighter;
 }
+
+h1::before.ldes {
+  content: "LDES | ";
+  color: var(--sec);
+  font-weight: lighter;
+}
+
 
 h1 {
   font-weight: bolder;
@@ -295,11 +296,74 @@ h1 {
 }
 
 .textContent h2 {
-  color: green;
+  color:  var(--prim);
   margin: 0.5em 0 0.2em -1px;
 }
 
 .textContent p {
   margin: 0;
   padding: 0;
+}
+
+.publication .title, .publication .authors, .publication .venue {
+  display: block;
+}
+
+.tagged > ul {
+  list-style-type: none;
+}
+
+ul + ul {
+  margin-top: 40px;
+}
+
+.tagged {
+  font-size: 1.2em;
+
+}
+.publication + .publication,.per-year + .per-year  {
+  margin-top: 20px;
+}
+
+.tagged {
+  position: relative;
+}
+
+.tagged ul {
+  margin-left: 0;
+}
+
+.tagged .year {
+  transform: translateX(-100%);
+  position: absolute;
+  left: -40px;
+  width: max-content;
+  font-weight: bolder;
+}
+
+.tagged .tag {
+  text-transform: capitalize;
+}
+.publication::before {
+  content: "■ ";
+  color: var(--prim);
+  position: absolute;
+  margin: -1px -16px;
+}
+
+.publication a {
+  text-decoration: none;
+}
+
+.links a {
+  font-size: 0.9em;
+  color: var(--sec);
+}
+
+.publication > :not(.title) {
+  font-size: .9em;
+}
+
+.publication .authors {
+  font-style: italic;
 }

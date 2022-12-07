@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/icons/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="green" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#5252cf">
+    <title>Linked Data Event Streams</title>
+    <style>
+    :root {
+      --prim: #5252cf;
+      --sec: #7950E6;
+    }
+    </style>
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" media="screen" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400italic,700italic,400,700' rel='stylesheet'>
+  </head>
+  <body>
+    <main>
+    <div class="row">
+      <div class="col-lg-2 col-md-1"></div>
+      <div class="col-lg-8 col-md-10 col-sm-12">
+        <nav class="navigation">
+          <p><a class="navpageheader" href="/linked-data-event-streams/">LDES</a></p>
+          <ul>
+            {% for nav in site.ldes_pages %}
+            <li class="navpage {% if include.current == nav.location %} active {% endif %}"><a href={{ nav.location }}>{{nav.title}}</a></li>
+            {% endfor %}
+
+ <!--           <li class="navpage"><a href="stories">Success Stories</a></li>-->
+            <li class="navpage new"><a href="https://w3id.org/ldes/specification">Specification</a></li>
+            <li class="navpage new"><a href="https://matrix.to/#/#ldes:chat.semantic.works">Chat room</a></li>
+            <li class="navpage new"><a href="https://www.youtube.com/playlist?list=PLRBOTYR9bOiibSZUv8_qCLWuJcv840dSk">YouTube</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-2 col-md-1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-md-1"></div>
+      <div class="col-lg-8 col-md-10 col-sm-12">
+
+
+        
