@@ -217,7 +217,7 @@ nav ul li:hover *, nav ul li.active * {
 
 .new {
   background-color: rgba(0, 0, 0, 0.06);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 

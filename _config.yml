@@ -62,7 +62,7 @@ ldes_publications:
         url: https://www.youtube.com/watch?v=89UVTahjCvo&t=1091s
   - title: Linked Data Event Streams in Solid containers
     year: 2022
-    tag: core
+    tag: specification
     url: https://raw.githubusercontent.com/woutslabbinck/papers/main/2022/Linked_Data_Event_Streams_in_Solid_containers.pdf
     authors: Slabbinck, W., Dedecker, R., Vasireddy, S., Verborgh, R., & Colpaert, P.
     venue: Proceedings of the 8th Workshop on Managing the Evolution and Preservation of the Data Web. 
