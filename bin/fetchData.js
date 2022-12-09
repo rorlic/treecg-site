@@ -13,13 +13,13 @@ program
   .command('fetch <config>')
   .action((config) => {
     fetch(config).then(() => process.exit(0))
-  })    
+  })
 
 program.parse(process.argv)
 
 
-async function fetch (configPath) {
-  const config = JSON.parse(fs.readFileSync(configPath, {encoding: "utf-8"}))
+async function fetch(configPath) {
+  const config = JSON.parse(fs.readFileSync(configPath, { encoding: "utf-8" }))
   console.log('config', config)
 
   let profiles = []
@@ -28,13 +28,13 @@ async function fetch (configPath) {
   }
   profiles = await Promise.all(profiles)
 
-  
-  if (!fs.existsSync('./_data/')){
-    fs.mkdirSync('./_data/');
+
+  if (!fs.existsSync('./pages/_data/')) {
+    fs.mkdirSync('./pages/_data/');
   }
-  fs.writeFileSync('./_data/team.json', JSON.stringify(profiles, null, 2))
-  fs.writeFileSync('./_data/demos.json', JSON.stringify(config.demos, null, 2))
-  fs.writeFileSync('./_data/publications.json', JSON.stringify(config.publications, null, 2))
+  fs.writeFileSync('./pages/_data/team.json', JSON.stringify(profiles, null, 2))
+  fs.writeFileSync('./pages/_data/demos.json', JSON.stringify(config.demos, null, 2))
+  fs.writeFileSync('./pages/_data/publications.json', JSON.stringify(config.publications, null, 2))
   console.log('Done')
 }
 
@@ -45,35 +45,35 @@ async function fetchProfile(id) {
     {
       id: 'name',
       var: '?name',
-      pred: FOAF+'name'
+      pred: FOAF + 'name'
     }, {
       id: 'givenName',
       var: '?givenName',
-      pred: FOAF+'givenName'
+      pred: FOAF + 'givenName'
     }, {
       id: 'familyName',
       var: '?familyName',
-      pred: FOAF+'familyName'
+      pred: FOAF + 'familyName'
     }, {
       id: 'title',
       var: '?title',
-      pred: VCARD+'title'
+      pred: VCARD + 'title'
     }, {
       id: 'mbox',
       var: '?mbox',
-      pred: FOAF+'mbox'
+      pred: FOAF + 'mbox'
     }, {
       id: 'img',
       var: '?img',
-      pred: FOAF+'img'
-    }, 
+      pred: FOAF + 'img'
+    },
   ]
   let profile = {}
   for (let property of properties) {
     profile[property.id] = await fetchProperty(id, property)
   }
   if (!profile.name) profile.name = profile.givenName + " " + profile.familyName
-  
+
   console.log(profile)
   return profile
 }

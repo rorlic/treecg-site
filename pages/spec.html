@@ -1,0 +1,41 @@
+---
+title: TREE community group
+---
+{% include header.html %}
+
+<div id="specpage">
+  <h1>Specification</h1>
+  <div class="textContent">
+    <div class="specification">
+      <h2>Tree specification</h2>
+      <p>
+  The TREE specification enables API developers to define relations between HTTP resources. A collection of items can be fragmented, and these fragments can be interlinked. It is an alternative to one-dimensional HTTP pagination. Instead of linking to the next or previous page, the relation describes what elements can be found by following the link to another page. Multiple links can be specified, enabling parallelization when traversing the search space.
+      </p>
+      <p>
+        <a href="https://w3id.org/tree/specification" target="_blank">https://w3id.org/tree/specification</a>
+      </p>
+    </div>
+    <div class="specification">
+      <h2>The Linked Data Event Streams specification</h2>
+      <p>A Linked Data Event Stream is a collection of immutable objects (such as version objects, sensor observations or archived representations). Each object is described in RDF.</p>
+      <p>The LDES specification uses the TREE specification for its collection and fragmentation (or paginating) features, which in turn is compatible with other specifications.
+      <p><a href="https://w3id.org/ldes/specification" target="_blank">https://w3id.org/ldes/specification</a>
+      </p>
+    </div>
+    <div class="specification">
+      <h2>Writing Linked Data Event Streams in LDP Basic Containers specification</h2>
+      <p>Writing to a time-based fragmented Linked Data Event Stream that is stored on a Linked Data Platform.</p>
+      <p>The term LDES in LDP describes a time-based fragmented LDES that is stored in a Linked Data Platform. Which allows interacting with LDESes using the LDP API.</p>
+      <p><a href="https://woutslabbinck.github.io/LDESinLDP/" target="_blank">https://woutslabbinck.github.io/LDESinLDP/</a></p>
+    </div>
+    <div class="specification">
+      <h2>The Smart Data Specification for Semantically Describing Streams (SDS)</h2>
+      <p>A Semantically Described Stream is a stream of Records that have undergone transformation steps. These transformations are described using RDF. This metadata model helps determine the lineage of Records on a Stream.</p>
+      <p>SDS consists of two parts, the SDS description and the SDS records. The description denotes the lineage of the elements on that data stream.</p>
+      <p><a href="https://treecg.github.io/SmartDataStreams-Spec/" target="_blank">https://treecg.github.io/SmartDataStreams-Spec/</a></p>
+    </div>
+  </div>
+</div>
+
+
+{% include footer.html %}

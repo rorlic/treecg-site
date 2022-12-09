@@ -29,6 +29,106 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+source: "pages"
+
+ldes_pages:
+  - title: TREE
+    location: /
+tree_pages:
+  - title: LDES
+    location: /linked-data-event-streams
+  - title: Specs
+    location: /spec
+  - title: Software
+    location: /software
+  - title: Publications
+    location: /publications
+  - title: Try live
+    location: /demo
+  # - title: Getting Started
+  #   location: getting-started
+  # - title: Publications
+  #   location: publications
+
+ldes_publications:
+  - title: Publishing base registries as Linked Data Event Streams
+    year: 2021
+    tag: core
+    url: https://github.com/ddvlanck/Publishing-Base-Registries-As-LDES/raw/master/Linked-Data-Event-Streams.pdf
+    authors: Van Lancker, D., Colpaert, P., Delva, H., Van de Vyvere, B., Rojas Meléndez, J., Dedecker, R., Michiels, P., Buyle, R., De Craene, A., & Verborgh, R. 
+    venue: Proceedings of the 21th International Conference on Web Engineering.
+    links:
+      - title: Presented at ENDORSE2021
+        url: https://www.youtube.com/watch?v=89UVTahjCvo&t=1091s
+  - title: Linked Data Event Streams in Solid containers
+    year: 2022
+    tag: specification
+    url: https://raw.githubusercontent.com/woutslabbinck/papers/main/2022/Linked_Data_Event_Streams_in_Solid_containers.pdf
+    authors: Slabbinck, W., Dedecker, R., Vasireddy, S., Verborgh, R., & Colpaert, P.
+    venue: Proceedings of the 8th Workshop on Managing the Evolution and Preservation of the Data Web. 
+    links:
+      - title: The presentation at MEPDaW22
+        url: https://docs.google.com/presentation/d/1Ut07fAWJ7Xa1zEts1t4S6r_Gn3brMMjCvqO2xDJ12sE/edit?usp=sharing
+  - title: Describing a network of live datasets with the SDS vocabulary
+    year: 2022
+    tag: specification
+    url: https://backoffice.biblio.ugent.be/download/8771000/8771003
+    authors: Vercruysse, A., Min Oo, S., & Colpaert, P.
+    venue: Proceedings of the 8th Workshop on Managing the Evolution and Preservation of the Data Web. 
+    links:
+      - title: The presentation at MEPDaW22
+        url: https://docs.google.com/presentation/d/15tH6BnJjGGGOm4NCqbRmZsnF-2XcYf7aTPL166vJOtw/edit?usp=sharing
+  - title: Publishing cultural heritage collections of Ghent with Linked Data Event Streams
+    year: 2022
+    tag: use case
+    authors: Van de Vyvere, B., Van D'Huynslager, O., Atauil, A., Segers, M., Van Campe, L., Vandekeybus, N., Teugels, S., Saenko, A., Pauwels, P.-J., & Colpaert, P.
+    venue: Proceedings of the Metadata and Semantics Research Conference 2021.
+    url: https://drive.google.com/file/d/1jOX6h7Z4qyn95RAegPZLlH5-aH1_ach7/view?usp=sharing
+    links:
+      - title: The created Linked Data Event Stream
+        url: https://apidg.gent.be/opendata/adlib2eventstream/v1/
+      - title: Presentation at MTSR2021
+        url: https://t.co/Eur9xHfvCO
+      - title: Video explaining the technical setup
+        url: https://www.youtube.com/watch?v=8_0QSEj_Qhg
+  - title: Publishing the Marine Regions Gazetteer as a Linked Data Event Stream
+    year: 2021
+    tag: use case
+    url: http://ceur-ws.org/Vol-2969/paper8-s4biodiv.pdf
+    authors: Lonneville, B., Delva, H., Portier, M., Van Maldeghem, L., Schepers, L., Bakeev, D., ... & Colpaert, P.
+    venue: In CEUR Workshop Proceedings.
+    links:
+      - title: The published Linked Data Event Stream
+        url: https://marineregions.org/feed
+  - title: A File-Based Linked Data Fragments Approach to Prefix Search
+    year: 2021
+    tag: use case
+    url: https://tree.linkeddatafragments.org/publications/2021-icwe-autocompletion.pdf
+    authors: Ruben, D., Delva, H., Colpaert, P., & Verborgh, R.
+    venue: Proceedings of the 21th International Conference on Web Engineering.
+    links:
+      - title: Check out a demo hosted on github pages
+        url: https://treecg.github.io/treemunica_typeahead_demo/
+      - title: The presentation at ISWE2021 
+        url: https://www.youtube.com/watch?v=eiLAQoC7Oag
+      - title: Github source code for the type-ahead library
+        url: https://github.com/TREEcg/treemunica/tree/master/packages/actor-init-typeahead
+  - title: Geospatial Partitioning of Open Transit Data
+    year: 2020
+    tag: use case
+    url: https://hdelva.be/articles/geospatial-linked-connections/
+    authors: Delva, H., Rojas, J. A., Vandenberghe, P. J., Colpaert, P., & Verborgh, R. 
+    venue: In International Conference on Web Engineering (pp. 305-320). Springer, Cham.
+    links:
+      - title: Paper in HTML
+        url: https://hdelva.be/articles/geospatial-linked-connections/
+      - title: Slides used at ICWE2020
+        url: https://hdelva.be/slides/icwe2020/#/
+      - title: The best stduent paper award
+        url: https://hdelva.be/assets/icwe_award.pdf
+
+
+
 # Build settings
 theme: minima
 plugins:
@@ -53,3 +153,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+include:
+  - icons
