@@ -4,22 +4,40 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/icons/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="green" />
+    <meta name="theme-color" content="{{include.prim}}" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#00a300">
-    <title>TREE</title>
+    <meta name="msapplication-TileColor" content="{{include.sec}}">
     <style>
     :root {
-      --prim: green;
-      --sec: #00a300;
+      --prim: {{include.prim}};
+      --sec: {{include.sec}};
     }
     </style>
-    <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" media="screen" />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400italic,700italic,400,700' rel='stylesheet'>
+
+
+    <title>{{page.title}}</title>
+    <meta property="og:title" content="{{page.title}}">
+    <meta name="twitter:title" content="{{page.title}}">
+  
+    {% if page.shortdescription %}
+    <meta name="description" content="{{page.shortdescription}}">
+    <meta property="og:description" content="{{page.shortdescription}}">
+    <meta name="twitter:description" content="{{page.shortdescription}}">
+    {%endif%}
+  
+    {% if page.previewimage %}
+    <meta property="og:image" content="{{page.previewimage}}">
+    <meta name="twitter:image" content="{{page.previewimage}}">
+    {% endif %}
+
+    <meta name="twitter:card" content="summary_large_image">
+
   </head>
   <body>
     <main>
@@ -27,13 +45,12 @@
       <div class="col-lg-2 col-md-1"></div>
       <div class="col-lg-8 col-md-10 col-sm-12">
         <nav class="navigation">
-          <p><a class="navpageheader" href="/">TREE</a></p>
+          <p><a class="navpageheader" href="{{include.self_link}}">{{include.self}}</a></p>
           <ul>
 
-            {% for nav in site.tree_pages %}
+            {% for nav in include.links %}
               {% assign url = nav.location | append: '.html' %}
               {% assign url2 = page.url | split: "/" | last | prepend: '/' %}
-
               <li class="navpage {{url2}} {{url}}  {% if url2 == url %} active {% endif %}"><a href={{ nav.location }}>{{nav.title}}</a></li>
             {% endfor %}
 
@@ -41,8 +58,9 @@
             <!--<li class="navpage"><a href="/datasets">Datasets</a></li>-->
             <!--<li class="navpage"><a href="/team">Team</a></li>-->
 
-            <li class="navpage new"><a href="https://www.youtube.com/playlist?list=PLRBOTYR9bOiibSZUv8_qCLWuJcv840dSk">YouTube</a></li>
-            <li class="navpage new"><a href="https://github.com/treecg">Github</a></li>
+            {% for nav in include.external_links %}
+              <li class="navpage new"><a href="{{ nave.location }}">{{nav.title}}</a></li>
+            {% endfor %}
           </ul>
         </nav>
       </div>
@@ -52,6 +70,3 @@
     <div class="row">
       <div class="col-lg-2 col-md-1"></div>
       <div class="col-lg-8 col-md-10 col-sm-12">
-
-
-        

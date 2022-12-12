@@ -274,16 +274,17 @@ nav ul li:hover *, nav ul li.active * {
   border-radius: 20px;
 }
 
-h1::before {
-  content: "TREE | ";
+h1.ldes::before, h1.tree::before {
   color: var(--sec);
   font-weight: lighter;
 }
 
-h1::before.ldes {
+h1.tree::before {
+  content: "TREE | ";
+}
+
+h1.ldes::before {
   content: "LDES | ";
-  color: var(--sec);
-  font-weight: lighter;
 }
 
 
@@ -300,7 +301,7 @@ h1 {
   margin: 0.5em 0 0.2em -1px;
 }
 
-.publication .title, .publication .authors, .publication .venue {
+.publication .title, .publication .authors, .publication .venue, .blog-entry .title {
   display: block;
 }
 
@@ -316,7 +317,7 @@ ul + ul {
   font-size: 1.2em;
 
 }
-.publication + .publication,.per-year + .per-year  {
+.publication + .publication,.per-year + .per-year, .blog-entry + .blog-entry  {
   margin-top: 20px;
 }
 
@@ -340,7 +341,7 @@ ul + ul {
   text-transform: capitalize;
 }
 
-.publication::before, .specification > h2::before, .software > h2::before {
+.publication::before, .specification > h2::before, .software > h2::before,.blog-entry .title::before  {
   content: "■ ";
   color: var(--prim);
   position: absolute;
@@ -351,7 +352,12 @@ ul + ul {
   content: "❖ ";
 }
 
-.publication a {
+.blog-entry .title::before {
+  content: "⬢ ";
+  margin: -1px -1.2em;
+}
+
+.publication a, .blog-entry a {
   text-decoration: none;
 }
 
@@ -360,10 +366,119 @@ ul + ul {
   color: var(--sec);
 }
 
-.publication > :not(.title) {
+.publication > :not(.title), .blog-entry > :not(.title) {
   font-size: .9em;
 }
 
-.publication .authors {
+.publication .authors, .blog-entry .authors {
   font-style: italic;
 }
+
+.blog-entry .tags {
+  display: inline-block;
+}
+
+.blog-entry .authors {
+  display: inline-block;
+  float: right;
+}
+
+.tag + .tag::before {
+  content: ' - '
+}
+
+.sub {
+  font-size: 0.9em;
+  font-style: italic;
+}
+.sub .tags {
+  float: right;
+  display: inline-block;
+}
+
+.blog p::before {
+  content: '▸ ';
+  font-size: 1.2em;
+  margin: 4px;
+  text-align: center;
+  color: var(--prim);
+}
+
+.authors .team {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.authors h2 {
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.authors h2:before, .authors h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: var(--sec);
+}
+
+.authors h2:before {
+    margin-left: -52%;
+    text-align: right;
+}
+.authors h2:after {
+    margin-left: 2%;
+}
+
+.team div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.team div img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.team div .title {
+  font-style: italic;
+
+}
+.team div *:not(.name) {
+  font-size: 0.9em;
+}
+
+.blog {
+  font-size: 12pt;
+}
+
+.blog > iframe {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.blog > h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.blog > h3 {
+  margin-top: 1em;
+}
+
+.blog > h2:after {
+  content: '';
+
+
+}
+

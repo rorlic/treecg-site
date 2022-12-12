@@ -67,7 +67,8 @@ async function fetchProfile(id) {
       var: '?img',
       pred: FOAF + 'img'
     },
-  ]
+  ];
+
   let profile = {}
   for (let property of properties) {
     profile[property.id] = await fetchProperty(id, property)
@@ -75,6 +76,8 @@ async function fetchProfile(id) {
   if (!profile.name) profile.name = profile.givenName + " " + profile.familyName
 
   console.log(profile)
+  profile.webId = id;
+
   return profile
 }
 

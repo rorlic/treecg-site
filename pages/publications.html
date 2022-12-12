@@ -1,10 +1,10 @@
 ---
 title: Publications
+layout: tree
 ---
-{% include header.html current='publications' %}
 
 <div id="specpage">
-  <h1 class="ldes">Publications</h1>
+  <h1 class="tree">Publications</h1>
   <div class="textContent">
     {% assign publications_grouped = site.ldes_publications | group_by: "tag" %}
     {% for tag in publications_grouped %}
@@ -39,4 +39,3 @@ title: Publications
   </div>
 </div>
 
-{% include footer.html %}

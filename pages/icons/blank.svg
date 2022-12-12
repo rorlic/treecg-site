@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="62.671082mm"
+   height="62.747089mm"
+   viewBox="0 0 62.671082 62.747089"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="blank.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.829812"
+     inkscape:cx="206.30535"
+     inkscape:cy="121.32394"
+     inkscape:window-width="3440"
+     inkscape:window-height="1413"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath417">
+      <circle
+         style="fill:#4d4d4d;stroke-width:3.96875;paint-order:markers fill stroke"
+         id="circle419"
+         cx="32.076126"
+         cy="32.561565"
+         r="31.549814" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.87885094,-1.3642902)">
+    <circle
+       style="fill:#4d4d4d;stroke:none;stroke-width:3.9244;paint-order:markers fill stroke"
+       id="path251"
+       cx="32.076126"
+       cy="32.561565"
+       r="31.197275" />
+    <ellipse
+       style="fill:#ffffff;stroke:none;stroke-width:2.90801;paint-order:markers fill stroke"
+       id="circle411"
+       cx="32.216213"
+       cy="49.821415"
+       rx="31.333721"
+       ry="17.055574"
+       clip-path="url(#clipPath417)" />
+    <circle
+       style="fill:#ffffff;stroke:none;stroke-width:2.2286;paint-order:markers fill stroke"
+       id="circle413"
+       cx="32.076126"
+       cy="27.115406"
+       r="17.716413" />
+  </g>
+</svg>
