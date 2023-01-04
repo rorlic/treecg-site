@@ -78,6 +78,15 @@ ldes_publications:
     links:
       - title: The presentation at MEPDaW22
         url: https://docs.google.com/presentation/d/15tH6BnJjGGGOm4NCqbRmZsnF-2XcYf7aTPL166vJOtw/edit?usp=sharing
+  - title: Publishing planned, live and historical public transport data on the Web with the Linked Connections framework
+    year: 2022
+    tag: use case
+    authors: Rojas Meléndez, J., Delva, H., Colpaert, P., & Verborgh.
+    venue: Semantic Web Journal.
+    url: https://www.semantic-web-journal.net/system/files/swj3116.pdf
+    links:
+      - title: Website explaining the idea
+        url: https://linkedconnections.org/
   - title: Publishing cultural heritage collections of Ghent with Linked Data Event Streams
     year: 2022
     tag: use case
@@ -91,6 +100,19 @@ ldes_publications:
         url: https://t.co/Eur9xHfvCO
       - title: Video explaining the technical setup
         url: https://www.youtube.com/watch?v=8_0QSEj_Qhg
+  - title: Leveraging semantic technologies for digital interoperability in the European railway domain
+    year: 2021
+    tag: use case
+    authors: Rojas Meléndez, J., Aguado, M., Vasilopoulou, P., Velitchkov, I., Van Assche, D., Colpaert, P., & Verborgh.
+    venue: Proceedings of the 20th International Semantic Web Conference.
+    url: https://link.springer.com/content/pdf/10.1007/978-3-030-88361-4_38.pdf?pdf=inline%20link
+    links:
+      - title: Paper in HTML
+        url: https://julianrojas.org/papers/iswc2021-in-use/ 
+      - title: Presentation at ISWC2021
+        url: http://videolectures.net/iswc2021_2c_railway_domain/
+      - title: ERA route compatibility check application
+        url: https://data-interop.era.europa.eu/
   - title: Publishing the Marine Regions Gazetteer as a Linked Data Event Stream
     year: 2021
     tag: use case
@@ -117,7 +139,7 @@ ldes_publications:
     year: 2020
     tag: use case
     url: https://hdelva.be/articles/geospatial-linked-connections/
-    authors: Delva, H., Rojas, J. A., Vandenberghe, P. J., Colpaert, P., & Verborgh, R. 
+    authors: Delva, H., Rojas Meléndez, J., Vandenberghe, P. J., Colpaert, P., & Verborgh, R. 
     venue: In International Conference on Web Engineering (pp. 305-320). Springer, Cham.
     links:
       - title: Paper in HTML
