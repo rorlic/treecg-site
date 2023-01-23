@@ -396,13 +396,7 @@ ul + ul {
   display: inline-block;
 }
 
-.blog p::before {
-  content: '▸ ';
-  font-size: 1.2em;
-  margin: 4px;
-  text-align: center;
-  color: var(--prim);
-}
+
 
 .authors .team {
   display: flex;
