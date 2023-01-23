@@ -51,6 +51,12 @@ tree_pages:
   #   location: publications
 
 ldes_publications:
+  - title: Building materializable querying interfaces with the TREE hypermedia specification
+    year: 2022
+    tag: core
+    url: https://treecg.github.io/paper-materializable-interfaces/
+    authors: Colpaert, P.
+    venue: Managing the Evolution and Preservation of the Data Web (MEPDaW 2022)
   - title: Publishing base registries as Linked Data Event Streams
     year: 2021
     tag: core
