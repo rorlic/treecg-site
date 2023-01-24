@@ -1,0 +1,58 @@
+---
+layout: ldes
+---
+<link href="/prism/prism.css" rel="stylesheet" />
+
+<div class="textContent blog">
+<h1 class="ldes">{{ page.title }}</h1>
+
+<div class="sub">
+{{ page.date | date_to_string }}
+-
+  {% for author in page.authors %}
+  <span class="tag">{{ author }}</span>
+  {% endfor %}
+
+  <div class="tags">
+    Tags: 
+    {% for tag in page.tags %}
+    <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+</div>
+
+{{ content }}
+
+<div class="authors">
+  {% if page.authors.size > 1 %}
+  <h2> Meet the authors  </h2>
+  {% else %}
+  <h2> Meet the author  </h2>
+  {% endif %}
+
+  <div class="team">
+  {% for name in page.authors %}
+
+  {% assign team = site.data.team | concat: site.team %}
+  {% for author in team %}
+    {% if author.name == name %}
+        <div>
+          <img property="image" src={% if author.img %} "{{author.img}}" {%else%} "/icons/blank.svg" {% endif %} />
+          <span class="name" property="name">{{author.name}}</span>
+          {% if author.title %}
+          <span class="title" >{{ author.title }}</span>
+          {%endif%}
+          {% if author.mbox %}
+           <a href="{{author.mbox}}">mail</a>
+          {%endif%}
+        </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+  </div>
+
+</div>
+
+</div>
+
+<script src="/prism/prism.js"></script>

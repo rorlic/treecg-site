@@ -1,0 +1,41 @@
+---
+title: LDES | Blog
+layout: ldes
+---
+
+<h1 class="ldes">Latest Posts</h1>
+
+<div class="tagged">
+<div class="textContent">
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    {% for year in postsByYear %}
+    <div class="per-year">
+      <span class="year">{{year.name}}</span>
+        {% for post in year.items %}
+      <div class="blog-entry">
+        <span class="title"><a href="{{ post.url }}">{{ post.title }}</a></span>
+        <p>{{post.excerpt}}</p>
+        <div>
+        {% if post.tags %}
+        <div class="tags">
+          Tags: 
+          {% for tag in post.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if post.authors %}
+        <div class="authors">
+          {% for author in post.authors %}
+          <span class="author">{{ author }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        </div>
+      </div>
+        {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+</div>
+
