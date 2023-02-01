@@ -2,7 +2,6 @@ body {
   text-align: center;
   min-height: 100vh;
   max-width: 860px;
-  min-width: 400px;
   margin: auto;
   overflow: auto;
   font: 11pt/1.6 'Open Sans', Verdana, Arial, sans-serif;
@@ -112,71 +111,6 @@ nav p {
     background-color:  var(--prim);
     margin-bottom: 0px;
     margin-top: 0px;
-}
-@media (max-width: 900px) {
-  nav p {
-    display: block;
-    border-radius: 10px 0 0 0;
-  }
-}
-
-@media (min-width: 900px) {
-  body.home main {
-    font-size: 1.2em;
-  }
-}
-@media (max-width: 900px) {
-  nav p {
-    display: block;
-    border-radius: 10px 0 0 0;
-  }
-  nav:after {
-    display: none;
-  }
-  svg.alternate .label:nth-child(odd) {
-    baseline-shift: -1em;
-  }
-  #billboard .slogan {
-    font-size: 1.9em;
-  }
-  #billboard .slogan img {
-    width: 100%;
-    margin-bottom: 0.5em;
-  }
-}
-@media (max-width: 620px) {
-  body {
-    padding: 5px 10px;
-    font-size: 10pt;
-  }
-  h1 {
-    display: none;
-  }
-  nav {
-    margin: -5px -10px 10px;
-  }
-  nav ul {
-    padding: 0px;
-    font-size: .9em;
-  }
-  nav ul li {
-    padding: 5px 6px;
-  }
-  .screenshot {
-    display: none;
-  }
-}
-@media (max-height: 700px) {
-  body {
-    line-height: 1.4;
-  }
-  #billboard .slogan {
-    font-size: 1.3em;
-  }
-  #billboard .slogan img {
-    width: 70%;
-    margin-bottom: 0.5em;
-  }
 }
 
 
@@ -455,10 +389,22 @@ ul + ul {
 .blog {
   font-size: 12pt;
 }
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
 
-.blog > iframe {
-  margin-left: 50%;
-  transform: translateX(-50%);
+/* Then style the iframe to fit in the container div with full height and width */
+.iframe-container  > iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .blog > h2 {
@@ -476,3 +422,65 @@ ul + ul {
 
 }
 
+@media (max-width: 900px) {
+  nav p {
+    display: block;
+    border-radius: 10px 0 0 0;
+  }
+}
+
+@media (min-width: 900px) {
+  body.home main {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 900px) {
+  nav p {
+    display: block;
+    border-radius: 10px 0 0 0;
+  }
+  nav:after {
+    display: none;
+  }
+  svg.alternate .label:nth-child(odd) {
+    baseline-shift: -1em;
+  }
+  #billboard .slogan {
+    font-size: 1.9em;
+  }
+  #billboard .slogan img {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 620px) {
+  body {
+    padding: 5px 10px;
+    font-size: 10pt;
+  }
+  nav {
+    margin: -5px -10px 10px;
+  }
+  nav ul {
+    padding: 0px;
+    font-size: .9em;
+  }
+  nav ul li {
+    padding: 5px 6px;
+  }
+  .screenshot {
+    display: none;
+  }
+}
+@media (max-height: 700px) {
+  body {
+    line-height: 1.4;
+  }
+  #billboard .slogan {
+    font-size: 1.3em;
+  }
+  #billboard .slogan img {
+    width: 70%;
+    margin-bottom: 0.5em;
+  }
+}

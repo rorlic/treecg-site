@@ -12,7 +12,9 @@ Each one has a URI as a subject, which makes sure it is unique.
 
 The publishing of an LDES allows data consumers to always stay in sync with a data source. 
 You can watch the video fragment below to learn more about the ecosystem that the event stream provides.
-<iframe src="https://player.vimeo.com/video/523711762?h=f9ed9c8ae2" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<div class="iframe-container">
+  <iframe src="https://player.vimeo.com/video/523711762?h=f9ed9c8ae2" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 The specification describes the structure of the LDES itself. With that information, you, as a human, can read the event stream. However, what if you do not want to read it yourself, but instead want one of your applications to ingest the events in the Event Stream?
 The question is then: "How does an application consume events of a Linked Data Event Stream". 
