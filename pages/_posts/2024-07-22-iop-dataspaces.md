@@ -21,7 +21,7 @@ Examples include the federation of data portals toward [the European data portal
 Each dataspace can decide independently how to achieve interoperability and query answering.
 However, with LDES, we provide a specific approach.
 As depicted in the figure below, we utilize an architectural style known as _Event Sourcing_.
-his involves describing changes at the source and creating queryable views tailored to consumer needs and usage control policies.
+This involves describing changes at the source and creating queryable views tailored to consumer needs and usage control policies.
 For example, an ANPR camera can write raw number plate data to an event source, which a trusted intermediary transforms and republishes according to the agreed-upon data model of the traffic measurements dataspace as traffic counts.
 
 ![A simple pipeline](https://docs.google.com/drawings/d/e/2PACX-1vT94isiCM5-M69i7D96-vNFTgBScZ9bsr24vw04fO0Z2a5O3R3qtqxgmuoarMLReuGRlVfBYw-UPpw3/pub?w=981&h=291)
@@ -52,6 +52,6 @@ Interoperability and queryability _within_ one dataspace are thus ensured by tra
 However, in reality, a dataset is going to be useful for multiple dataspaces, requiring interoperability with multiple ecosystems.
 If more dataspaces rely on Linked Data and Event Streaming, interoperability _across_ thematic dataspaces would become possible: a data provider could offer the LDES in multiple data models, or intermediaries can derive multiple views from the same source.
 
-In conclusion, Linked Data Event Streams (LDES) enables the exchange of interoperable datasets within and across dataspaces by applying event sourcing on Web APIs.
-Publishing an LDES yourself is light-weight---for small LDESs this can be just one page---by design to facilitate adoption.
+That’s how Linked Data Event Streams (LDES) enables the exchange of interoperable datasets within and across dataspaces by applying event sourcing on Web APIs.
+Publishing an LDES yourself is light-weight by design to facilitate adoption.
 The responsibility of knowing where you are in the stream is fully up to the subscribers, which can be done with the open-source LDES clients.
