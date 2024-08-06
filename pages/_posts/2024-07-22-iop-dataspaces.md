@@ -22,16 +22,16 @@ Each dataspace can decide independently how to achieve interoperability and quer
 However, with LDES, we provide a specific approach.
 As depicted in the figure below, we utilize an architectural style known as _Event Sourcing_ (see [Microsoft's](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing) and [Amazon's](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/service-per-team.html) descriptions about it).
 This involves describing changes at the source and creating query-able views tailored to consumer needs and usage control policies.
-For example, an ANPR camera can write raw number plate data to an event source, which a trusted intermediary transforms and republishes according to the agreed-upon data model of the traffic measurements dataspace as aggregated and anonymized traffic counts.
+For example, an ANPR camera can write raw number plate data to an event source, which a trusted intermediary participant transforms and republishes according to the agreed-upon data model of the traffic measurements dataspace as aggregated and anonymized traffic counts.
 
 ![A simple pipeline](https://docs.google.com/drawings/d/e/2PACX-1vT94isiCM5-M69i7D96-vNFTgBScZ9bsr24vw04fO0Z2a5O3R3qtqxgmuoarMLReuGRlVfBYw-UPpw3/pub?w=981&h=291)
 
 Again, the story can be adapted for any other kind of dataset.
 For example, for data portals, we have created the [DCAT-AP Feeds specification](https://semiceu.github.io/LDES-DCAT-AP-feeds/) that specifies how a data portal can change, so that aggregators like *data.europa.eu* can build their derived views incrementally knowing what types of changes it can expect.
 
-For each type of dataset there are always intermediaries that would like to aggregate datasets, transform them into a model that can be used into a certain dataspace, or provide specialized APIs on top of them.
-Intermediaries can self-regulate such services based on demand: i.e., if an autocompletion API would not be used anymore, it can be brought offline, still allowing others in the ecosystem to take over certain functionalities.
-The LDES protocol therefore is focused on enabling intermediaries, and thus lowering the burden on dataset providers as they do not need to focus on offering all these services on their own.
+For each type of dataset there are always intermediary participants that would like to aggregate datasets, transform them into a model that can be used into a certain dataspace, or provide specialized APIs on top of them.
+Intermediary participants can self-regulate such services based on demand: i.e., if an autocompletion API would not be used anymore, it can be brought offline, still allowing others in the ecosystem to take over certain functionalities.
+The LDES protocol therefore is focused on enabling intermediary participants, and thus lowering the burden on dataset providers as they do not need to focus on offering all these services on their own.
 
 This requires the participants themselves, at the minimum, to be able to replicate and always stay in-sync with the source of the data.
 This is why we designed the simplest LDES views to be chronological search trees.
