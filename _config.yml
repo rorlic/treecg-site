@@ -75,7 +75,7 @@ ldes_publications:
   - title: Optimizing Traversal Queries of Sensor Data Using a Rule-Based Reachability Approach
     year: 2024
     author: TAM, B.E.
-    tag: querying
+    tag: core
     url: https://github.com/constraintAutomaton/rule-based-approach-for-source-selection-in-LTQP/releases/download/cameraReady/main.pdf
     venue: International Semantic Web Conference (poster)
   - title: Building materializable querying interfaces with the TREE hypermedia specification
