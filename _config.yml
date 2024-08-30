@@ -74,7 +74,7 @@ tree_external:
 ldes_publications:
   - title: Optimizing Traversal Queries of Sensor Data Using a Rule-Based Reachability Approach
     year: 2024
-    authors: TAM, Bryan-Elliot, et al.
+    authors: TAM, Bryan-Elliot, Rojas Meléndez, J., Taelman, R., & Colpaert, P.
     tag: core
     url: https://github.com/constraintAutomaton/rule-based-approach-for-source-selection-in-LTQP/releases/download/cameraReady/main.pdf
     venue: International Semantic Web Conference (poster)
