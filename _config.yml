@@ -133,6 +133,16 @@ ldes_publications:
         url: https://t.co/Eur9xHfvCO
       - title: Video explaining the technical setup
         url: https://www.youtube.com/watch?v=8_0QSEj_Qhg
+  - Semantic and technically interoperable data exchange in the Flanders Smart Data Space
+    year: 2024
+    tag: use case
+    authors: Van Lancker, D., Logghe, S., Rojas, J., De Craene, A., Vanlishout, Z., & Colpaert, P.
+    venue: Proceedings of the 23d International Semantic Web Conference.
+    url: https://pietercolpaert.be/papers/preprint-iswc2024-vanlancker-vsds.pdf
+    links:
+      - title: The VSDS website
+        url: https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/vlaamse-smart-data-space
+      
   - title: Leveraging semantic technologies for digital interoperability in the European railway domain
     year: 2021
     tag: use case
