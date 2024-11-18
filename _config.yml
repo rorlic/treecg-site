@@ -133,7 +133,7 @@ ldes_publications:
         url: https://t.co/Eur9xHfvCO
       - title: Video explaining the technical setup
         url: https://www.youtube.com/watch?v=8_0QSEj_Qhg
-  - Semantic and technically interoperable data exchange in the Flanders Smart Data Space
+  - title: Semantic and technically interoperable data exchange in the Flanders Smart Data Space
     year: 2024
     tag: use case
     authors: Van Lancker, D., Logghe, S., Rojas, J., De Craene, A., Vanlishout, Z., & Colpaert, P.
