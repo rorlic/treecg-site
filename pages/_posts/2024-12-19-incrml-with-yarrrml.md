@@ -144,7 +144,7 @@ This allows consumers of the data to keep up-to-date with minimal effort.
 Furthermore, LDES allows *fragmentation* (or *pagination*) of the data so that previous versions can be cached, e.g.
 using HTTP caching.
 
-![ldes](img/ldes.png)
+![ldes](../../../img/ldes.png)
 
 This figure illustrates a LDES.
 The blue blocks represent data objects (called *members*). 
