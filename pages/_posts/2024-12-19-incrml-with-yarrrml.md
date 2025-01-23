@@ -141,15 +141,43 @@ knowledge graphs on the web.
 In short, LDES can be described as a collection of immutable data. 
 New versions of the data can be added to the collection, forming a stream of updates.
 This allows consumers of the data to keep up-to-date with minimal effort. 
-Furthermore, LDES allows *fragmentation* (or *pagination*) of the data so that previous versions can be cached, e.g.
-using HTTP caching.
 
-![ldes](../../../img/ldes.png)
+Furthermore, LDES allows *fragmentation* of the data making search more efficient by providing a
+search tree view. Fragments that are unlikely to change can be  cached, e.g. using HTTP caching.
+
+```mermaid
+flowchart TD
+    index["/"]
+    2024[2024]
+    2025[2025]
+    12[December]
+    01[January]
+    02[February]
+    data_1[ ]
+    data_2[ ]
+    data_3[ ]
+    data_4[ ]
+    data_5[ ]
+    data_6[ ]
+
+    index --> 2024
+    index --> 2025
+    2024 --> 12
+    2025 --> 01
+    2025 --> 02
+    12 --> data_1
+    12 --> data_2
+    01 --> data_3
+    01 --> data_4
+    01 --> data_5
+    02 --> data_6
+```
 
 This figure illustrates a LDES.
-The blue blocks represent data objects (called *members*). 
-A number of members form a *fragment* or *page*.
-Pages can be linked (using the [TREE](https://w3id.org/tree/specification) hypermedia controls).
+The blocks at the bottom represent data objects (called *members*).
+In this case time-based hierarchical fragmentation is used.
+The fragments representing a month point to its members.
+Fragments can be linked (using the [TREE](https://w3id.org/tree/specification) hypermedia controls).
 
 ## Generating a *changing* Knowledge Graph
 
