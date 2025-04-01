@@ -4,7 +4,7 @@ layout: post
 authors:
 - Ranko Orlic
 tags:
-- LDES
+- Linked Data
 ---
 Linked data can be used to represent any structured data. In Linked Data, we use the [Resource Description Format](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF) to model a thing (aka. resource) as a number of triples, where a triple is defined as:
 * the _subject_, which is the identity of the thing,
