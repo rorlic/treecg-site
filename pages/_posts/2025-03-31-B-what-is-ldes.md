@@ -6,7 +6,9 @@ authors:
 tags:
 - LDES
 ---
-When publishing data for use by data clients, the actual problem that we are trying to solve is data _sharing_, not data _querying_. So, why would we try to solve that with a _querying_ API? We need a generic API which allows for sharing data sets instead. LDES provides a way to do exactly that. It allows a data client to copy the _historical_ and _current_ state of a data set (*replicate*) and to keep up to date with the _changes_ made to it in the future (*synchronize*).
+When publishing data for use by data clients, the actual problem that we are trying to solve is data _sharing_, not data _querying_. So, why would we try to solve that with a _querying_ API? We need a generic API which allows for sharing data sets instead.
+
+LDES provides a way to do exactly that. It allows a data client to copy the _historical_ and _current_ state of a data set (*replicate*) and to keep up to date with the _changes_ made to it in the future (*synchronize*).
 
 If you look at the name LDES you can see that it actually consists of 2 parts: _Linked Data_ (LD) and _Event Streams_ (ES).
 
