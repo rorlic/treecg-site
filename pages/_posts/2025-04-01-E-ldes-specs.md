@@ -1,5 +1,5 @@
 ---
-title: LDES specification basics - Step-by-step guide 5/17
+title: LDES step-by-step guide 5/18 - LDES specification basics
 layout: post
 authors:
 - Ranko Orlic

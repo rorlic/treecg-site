@@ -1,5 +1,5 @@
 ---
-title: TREE specification basics - Step-by-step guide 4/17
+title: LDES step-by-step guide 4/18 - TREE specification basics
 layout: post
 authors:
 - Ranko Orlic

@@ -1,5 +1,5 @@
 ---
-title: TREE reference-based view - Step-by-step guide 10/17
+title: LDES step-by-step guide 10/18 - TREE reference-based view
 layout: post
 authors:
 - Ranko Orlic

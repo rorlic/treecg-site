@@ -1,5 +1,5 @@
 ---
-title: TREE geospatial view - Step-by-step guide 9/17
+title: LDES step-by-step guide 9/18 - TREE geospatial view
 layout: post
 authors:
 - Ranko Orlic

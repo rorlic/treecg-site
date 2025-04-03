@@ -1,5 +1,5 @@
 ---
-title: TREE partitioning basics - Step-by-step guide 6/17
+title: LDES step-by-step guide 6/18 - TREE partitioning basics
 layout: post
 authors:
 - Ranko Orlic

@@ -1,5 +1,5 @@
 ---
-title: TREE partitioning types - Step-by-step guide 7/17
+title: LDES step-by-step guide 7/18 - TREE partitioning types
 layout: post
 authors:
 - Ranko Orlic

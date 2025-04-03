@@ -1,5 +1,5 @@
 ---
-title: Linked Data Basics - Step-by-step guide 3/17
+title: LDES step-by-step guide 3/18 - Linked Data Basics
 layout: post
 authors:
 - Ranko Orlic

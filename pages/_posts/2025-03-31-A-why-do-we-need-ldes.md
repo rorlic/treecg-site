@@ -1,5 +1,5 @@
 ---
-title: Why do we need LDES? - Step-by-step guide 1/17
+title: LDES step-by-step guide 1/18 - Why do we need LDES?
 layout: post
 authors:
 - Ranko Orlic

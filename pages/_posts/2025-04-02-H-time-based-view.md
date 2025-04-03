@@ -1,5 +1,5 @@
 ---
-title: TREE time-based view - Step-by-step guide 8/17
+title: LDES step-by-step guide 8/18 - TREE time-based view
 layout: post
 authors:
 - Ranko Orlic
