@@ -75,3 +75,5 @@ flowchart LR
     rel2 -- tree:value --> male
 ```
 Fig 1. Example Reference-based View
+
+Summarized, a **reference-based view** allows us to create a (shallow) **hierarchical structure** where we can **filter a data set based on some classification**.

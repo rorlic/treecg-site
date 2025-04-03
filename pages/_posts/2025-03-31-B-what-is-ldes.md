@@ -17,5 +17,3 @@ If you look at the name LDES you can see that it actually consists of 2 parts: _
 An [(Event) Stream](https://en.wikipedia.org/wiki/Stream_(computing)) is a continuous flow of data produced over time by some system. In software development, we typically handle such a flow using [stream processing](https://en.wikipedia.org/wiki/Stream_processing). Each data item contains an [event](https://en.wikipedia.org/wiki/Event_(computing)), which is basically a change of the state of a thing. An event can either represent only the portion of this thing that has changed, or the full new state of the thing. The LDES specification requires that the data items contain the complete new state of a thing. We call this a (state object) _version_.
 
 In essence, a LDES is **an event stream of (full) versions of things, represented as linked data**.
-
-In order to understand LDES better, we need to look into the basics of linked data and (one of) its representations.

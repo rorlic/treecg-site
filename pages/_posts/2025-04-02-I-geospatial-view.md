@@ -42,3 +42,5 @@ We can visualize the tiles in our example:
 ![Tiles visualized](./artwork/tiles.png)
 
 Fig 1. Tiles visualized
+
+Summarized, a **geospatial view** allows us to create a **hierarchical structure** where we can **filter a data set based on containment of data items in a geospatial area**, usually a polygon.

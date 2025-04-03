@@ -134,8 +134,8 @@ curl "http://my-domain.org/ldes/disney" -X GET -H "content-type: text/turtle"
 
 An implementation of a LDES server can choose at what HTTP endpoint it offers a LDES. The LDES specification does not impose any restrictions on the actual API of a LDES server: it only defines the content of a LDES. Actually, the LDES specification only defines a generic way to retrieve a LDES using the HTTP protocol.
 
-Summarized, the LDES specification defines that a **`ldes:EventStream` contains immutable members** and communicates to data clients **how versions of a thing can be grouped and sorted**.
-
 The [LDES vocabulary](https://raw.githubusercontent.com/SEMICeu/LinkedDataEventStreams/b9c0d747e8d0cb6cb2b0215c758252cf95c30cda/vocabulary.ttl) formally defines all the concepts in detail.
 
 As you can see in the example above, even the human readable Turtle format is pretty verbose. This is not related to LDES specific but rather to linked data in general. In order to have unambiguous semantics we need this verbosity. But, is that not a small price to pay for great interoperability?
+
+Summarized, the LDES specification defines that a **`ldes:EventStream` contains immutable members** and communicates to data clients **how versions of a thing can be grouped and sorted**.

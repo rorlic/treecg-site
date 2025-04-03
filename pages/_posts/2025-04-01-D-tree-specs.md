@@ -114,6 +114,6 @@ schema:ProductShape
 
 **Note** that our members would violate this SHACL shape because it specifies that the predicate `schema:givenName` MUST be present exactly once.
 
-Summarized, in TREE we define a **data set as a `tree:Collection`** with its predicate **`tree:member` referring to a data item** and we use the **`tree:shape` predicate to define the data item validation rules** that each data item must obey.
-
 The [TREE vocabulary](https://cdn.jsdelivr.net/gh/treecg/specification@master/tree.ttl) formally defines all the concepts in detail.
+
+Summarized, in TREE we define a **data set as a `tree:Collection`** with its predicate **`tree:member` referring to a data item** and we use the **`tree:shape` predicate to define the data item validation rules** that each data item must obey.
