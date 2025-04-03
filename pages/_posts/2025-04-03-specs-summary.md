@@ -13,7 +13,7 @@ If you are looking for a more detailed view, please see the LDES step-by-step gu
 ## Why?
 There are two classic approaches to sharing a data set: export the data set in a standard file format or provide a query API. These approaches have conflicting pros and cons when looking from the data producer (publisher) and data consumers (client) sides.
 
-**Linked Data Event Streams (LDES) does a much better job of balancing the (hosting and maintenance) cost between the publisher and the client**.
+*Linked Data Event Streams (LDES) does a much better job of balancing the (hosting and maintenance) cost between the publisher and the client.*
 
 When offering a slow-changing data set using a *data set export*, it is the publisher who benefits mostly as the client must overcomes most of the difficulties:
 
@@ -37,7 +37,7 @@ On the other hand, when offering a fast-changing data set using a *query API*, t
 |must make API universally applicable<br>or use standard API|must handle unstable or backwards incompatible API|
 
 ## What?
-*LDES* provides a data *sharing* API, which does not allow *querying*, but facilitates duplication of the historical, current and future data set states. It is based on linked data, which requires globally unique identifiers and property semantics, and the concept of an event stream, which is a continuous flow of events. In essence, **LDES is an event stream of immutable members**, which contain the full state changes (versions) of the data set items.
+*LDES* provides a data *sharing* API, which does not allow *querying*, but facilitates duplication of the historical, current and future data set states. It is based on linked data, which requires globally unique identifiers and property semantics, and the concept of an event stream, which is a continuous flow of events. In essence, *LDES is an event stream of immutable members*, which contain the full state changes (versions) of the data set items.
 
 |publisher|client|
 |:-|-:|
