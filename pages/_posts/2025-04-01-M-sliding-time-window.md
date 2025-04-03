@@ -34,6 +34,6 @@ disney:sliding-time-window a tree:Node ;
     tree:value "P30Y"^^xsd:duration 
   ] .
 ```
-> **Note** that in our [example above]({% post_url 2025-01-01-E-ldes-specs %}#full-example) this sliding time-window view would only contain member `wiki:Minnie_Mouse#v2` because any member with a `dct:created` value before today minus 30 years is removed. This remaining member should be removed in about five years (around January 1st, 2030).
+> **Note** that in our [example above]({% post_url 2025-04-01-E-ldes-specs %}#full-example) this sliding time-window view would only contain member `wiki:Minnie_Mouse#v2` because any member with a `dct:created` value before today minus 30 years is removed. This remaining member should be removed in about five years (around January 1st, 2030).
 
 Summarized, we can use a **time-based policy** to **drop all members before a relative date and time**, basically the start of the sliding time window.

@@ -33,6 +33,6 @@ disney:point-in-time a tree:Node ;
   ] .
 ```
 
-> **Note** that in our [example above]({% post_url 2025-01-01-E-ldes-specs %}#full-example) this point-in-time view would only contain members `wiki:Minnie_Mouse#v2` and `wiki:Mickey_Mouse#v2` because the other two members have a `dct:created` value which is lower than our `ldes:pointInTime` value.
+> **Note** that in our [example above]({% post_url 2025-04-01-E-ldes-specs %}#full-example) this point-in-time view would only contain members `wiki:Minnie_Mouse#v2` and `wiki:Mickey_Mouse#v2` because the other two members have a `dct:created` value which is lower than our `ldes:pointInTime` value.
 
 Summarized, we can use a **point-in-time policy** to **drop all members before an absolute date and time**.

@@ -38,6 +38,6 @@ disney:version-based a tree:Node ;
     ldes:amount 2
   ] .
 ```
-> **Note** that in our [example above]({% post_url 2025-01-01-E-ldes-specs %}#full-example) this version-based view would contain all current members. If at some time in the future a third version of a member would be added, then the first version would be removed from the view.
+> **Note** that in our [example above]({% post_url 2025-04-01-E-ldes-specs %}#full-example) this version-based view would contain all current members. If at some time in the future a third version of a member would be added, then the first version would be removed from the view.
 
 Summarized, we can use a **version-based policy** to **drop all but a number of latest versions of each member**.
