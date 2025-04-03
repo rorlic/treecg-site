@@ -39,7 +39,7 @@ A tiling system basically means that we start with the world all in one tile. We
 
 We can visualize the tiles in our example:
 
-![Tiles visualized](./artwork/tiles.png)
+![Tiles visualized]({{ site.baseurl }}/img/artwork/I-geospatial-view_tiles.png)
 
 Fig 1. Tiles visualized
 

@@ -29,6 +29,6 @@ disney:latest-state a tree:Node ;
     a ldes:LatestVersionSubset
   ] .
 ```
-> **Note** that in our [example above](#ldes-specification) this latest-state view would only contain members `wiki:Minnie_Mouse#v2` and `wiki:Mickey_Mouse#v2` because these are the latests versions of each state object. If at some time in the future a third version of a member would be added, then the previous version of that state object would be removed from the view.
+> **Note** that in our [example above]({% post_url 2025-01-01-E-ldes-specs %}#full-example) this latest-state view would only contain members `wiki:Minnie_Mouse#v2` and `wiki:Mickey_Mouse#v2` because these are the latests versions of each state object. If at some time in the future a third version of a member would be added, then the previous version of that state object would be removed from the view.
 
 A **latest-state retention policy** is a special case of a version-based retention policy to **drop all but the latest version of each member**, in essence just keeping the current/latest state of a data set, without the history of changes.
