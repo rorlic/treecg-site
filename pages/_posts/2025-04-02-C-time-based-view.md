@@ -1,5 +1,5 @@
 ---
-title: TREE time-based view
+title: TREE time-based view - Step-by-step guide 8/17
 layout: post
 authors:
 - Ranko Orlic

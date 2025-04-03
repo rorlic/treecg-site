@@ -1,5 +1,5 @@
 ---
-title: TREE partitioning types
+title: TREE partitioning types - Step-by-step guide 7/17
 layout: post
 authors:
 - Ranko Orlic

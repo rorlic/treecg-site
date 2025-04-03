@@ -1,5 +1,5 @@
 ---
-title: Linked Data Basics
+title: Linked Data Basics - Step-by-step guide 3/17
 layout: post
 authors:
 - Ranko Orlic

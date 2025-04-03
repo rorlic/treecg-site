@@ -1,5 +1,5 @@
 ---
-title: TREE geospatial view
+title: TREE geospatial view - Step-by-step guide 9/17
 layout: post
 authors:
 - Ranko Orlic

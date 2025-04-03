@@ -1,5 +1,5 @@
 ---
-title: TREE partitioning basics
+title: TREE partitioning basics - Step-by-step guide 6/17
 layout: post
 authors:
 - Ranko Orlic

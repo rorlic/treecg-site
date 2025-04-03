@@ -1,5 +1,5 @@
 ---
-title: What is LDES?
+title: What is LDES? - Step-by-step guide 2/17
 layout: post
 authors:
 - Ranko Orlic
